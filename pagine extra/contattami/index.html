@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <!-- Puoi includere il tuo CSS o Bootstrap per lo stile -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body{
+      background-color: #baefe1;
+    }
+    .centered-text {
+    text-align: center;
+    margin-top: 1.5cm;
+    margin-bottom: 2cm;
+  }
+  </style>
+
+<div class="breadcrumb-top">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" style="background-color: white;">
+      <li class="breadcrumb-item"><a class="link-bianco" href="file:///C:/Users/Lenovo/.vscode/progetto/index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">CV</li>
+    </ol>
+  </nav>
+  </div>
+
+<h1 class="centered-text"> Reach out! </h1>
+<h5 class="centered-text due"> You're welcome to get in touch if you'd like to collaborate or simply connect. </h5>
+
+  <div class="container mt-5">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name (required)</label>
+        <input type="text" class="form-control" id="name" name="name" required title="Please enter your name.">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address (required)</label>
+        <input type="email" class="form-control" id="email" name="email" required title="Please enter your email address.">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required title="Please enter your message.">Leave a message here</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    
+  </div>
+  <h3 class="centered-text"> I'll get back to you as soon as possible </h3>
+</body>
+</html>

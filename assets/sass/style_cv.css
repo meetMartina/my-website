@@ -1,0 +1,127 @@
+body {
+  background-color: #39a271;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb-top {
+  color: #ffffff;
+}
+
+/* Link */
+.link-bianco {
+  color: #ffffff;
+}
+
+/* Contenitore principale */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #39a271;
+}
+
+/* Sezione Header */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Foto del profilo */
+.profile-pic {
+  width: 200px;
+  height: 210px;
+  border-radius: 50%;
+     object-fit: cover;
+  border: 6px solid #39a271;
+}
+
+/* Sezione Data di nascita */
+.dob-container {
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #309867;
+}
+
+.dob {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Sezione Sommario */
+.summary-section {
+  color: #ffffff;
+  background-color: #39a271 !important;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+/* Sezione Esperienza */
+.experience-section,
+.education-section,
+.skills-section,
+.languages-section,
+.contacts-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.custom-badge{
+  background-color: #39a271;
+}
+
+/* Personalizzare la card */
+.card {
+  background-color: #39a271 !important;
+  color: #ffffff;
+}
+
+/* Sezione Certificati */
+.certificate-section {
+  background-color: #39a271 !important;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Colore dei link personalizzati */
+.custom-link {
+  color: #309867;
+  text-decoration: none;
+}
+
+/* Effetto hover sui link */
+.custom-link:hover {
+  color: #309867;
+  text-decoration: underline;
+}/*# sourceMappingURL=style_cv2.css.map */

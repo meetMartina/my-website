@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='"..\..\assets\sass\style_home.css"'> 
+        
+        <title>My website</title>
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Includi Font Awesome per le icone -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+   <style>
+    /* Navbar sticky */
+.navbar-sticky {
+  position: -webkit-sticky; /* Supporto per browser WebKit */
+  position: sticky;
+  top: 0;
+  z-index: 1050; /* Assicura che la navbar rimanga sopra gli altri contenuti */
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+  background-color: #d9f4ab; /* Colore di sfondo */
+}
+
+   </style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-sticky">
+    <div class="container-fluid" style="background-color: #d9f4ab;">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/favicon-32x32.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" href="index.html">
+        Martina's UX
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100">
+          <!-- Voci della navbar -->
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+  
+        <!-- Icone dei social sulla destra -->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="https://www.instagram.com/martina_meetsworld/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="https://www.linkedin.com/in/martina-scattini-897343157/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="https://github.com/meetMartina" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!-- HEADER -->
+          <header style="background-image: url(https://www.templates.com/wp-content/uploads/2021/02/543123-800x418.jpeg); opacity: 0.9; min-height: 300px; background-size: cover;" class="hero-header d-flex align-items-center justify-content-center">
+            <div class="container text-center text-black" style="font-weight: bold; background-color: white; padding: 15px; opacity: 0.8; border-radius: 10px; max-width: 650px">
+                <h3 class="display-4">Welcome to Martina's UX</h3>
+                <h4 class="lead">Designing for People, Creating Intuitive Journeys.</h4>
+            </div>
+        </header>
+
+<div class="container mt-5" style="height: 150x; padding-bottom: 50px;">
+  <h1>Hello!</h1>
+  <p>I'm Martina Scattini, an Italian girl currently studying for a master degree in UX/UI design on <a class="link-nero" href="https://www.start2impact.it/master/" style="color: black;">Start2impact</a>. </p>
+  <p>I am passionate about creating intuitive and engaging digital experiences, where usability blends smoothly with aesthetics.</p>
+  
+  
+  
+</div>
+
+<!-- Sezione ABOUT ME -->
+
+<section id="about" style="min-height: 400px; background-color:  #c1e288; padding-left: 48px;  padding-top: 15px;padding-bottom: 60px;">
+  <div class="section-title">
+  <h1>About me:</h1> </br>
+</div>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-md-start">
+      <img src="assets/img/profilo_4.jpg" alt="Foto profilo" style="width:280px; height:280px; border-radius: 50%; object-fit: cover; margin-left: 60px;">
+    </div>
+    <div class="col-md-6">
+      <p>
+        I am curious and dynamic, always looking for new experiences.</p>
+        <p>My different interests, ranging from languages and human connection to music and physics, have provided me with a broad and formative background.</p>
+
+     <p>This diverse mix has fostered adaptability and creativity, allowing me to navigate new challenges with versatility.</p>
+  
+      <p>My journey into the field of UX/UI Design hasn't been linear, but rather enlightening, pushing me to discover the power of design as a tool to connect people with technology.</p>
+       <p> Find more details on my <a class="link-bianco" href="file:///C:/Users/Lenovo/.vscode/progetto/pagine%20extra/cv/index.html" style="color: black;">CV</a>. </p>
+    
+    </div>
+  </div>
+</section>
+
+<!-- Sezione PORTFOLIO -->
+
+<section id="portfolio" style="min-height: 500px; padding-left: 48px;  padding-top: 20px; padding-bottom: 40px;">
+  <h1>Portfolio:</h1>
+  <p style="margin-top: 15px;"></p>
+  <div class="container mt-4" style="display: flex; flex-direction: column; gap: 2cm;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="assets/img/grafica.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">Creating logo, color palette, icons, images for Facebook, YouTube and Instagram for a sustainable travel agency.</p>
+            <a href="assets/pdf/Progetto Grafica UX_UI.pdf" class="btn btn-primary" target="_blank">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="assets/img/copywrite.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Copywrite</h5>
+            <p class="card-text">Writing a blog post capable of touching people's hearts for a hotel that is attentive to sustainability.</p>
+            <a href="assets/pdf/Progetto Copywrite.pdf" class="btn btn-primary" target="_blank">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="assets/img/discovery 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Discovery part 1</h5>
+            <p class="card-text">Doing an as is analysis and user research for a plant-based brand.</p>
+            <a href="assets/pdf/Progetto Discovery 1.pdf" class="btn btn-primary" target="_blank">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="assets/img/discovery 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Discovery part 2</h5>
+            <p class="card-text">Working on personas and user journeys for a plant-based company.</p>
+            <a href="assets/pdf/Progetto Discovery 2.pdf" class="btn btn-primary" target="_blank">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="assets/img/videoediting.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Video Editing</h5>
+            <p class="card-text">Creating a 60 second mini-video addressing Goal 4 of the UN Agenda 2030: Provide quality education for all.</p>
+            <a href="https://drive.google.com/drive/folders/1rpU83XI2Pb1vsuPrGm-tNx93xAJI5Ako" class="btn btn-primary" target="_blank">Show</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  
+<footer class="bg-dark text-white py-5" id="contacts">
+    <div class="container">
+      <div class="row">
+        <!-- Colonna 1 CONTATTI -->
+        <div class="col-md-4" id="contacts">
+          <h3>How to find me</h3>
+          <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i>  Rome, Italy</li>
+          <!--<li> <i class="fas fa-envelope"> </i> <a href="mailto:tuoemail@example.com" class="me-3 custom-link" style="color: white;">martina.scattini@gmail.com</a></li> -->
+          <li><a href="file:///C:/Users/Lenovo/.vscode/progetto/pagine%20extra/contattami/index.html" class="text-white"><i class="fas fa-pen"></i>  Contact me</a></li>
+        
+        </ul>
+      </div>
+        <!-- Colonna 2 -->
+        <div class="col-md-4">
+          <h3>Link Utili</h3>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="text-white">About me</a></li>
+            <li><a href="file:///C:/Users/Lenovo/.vscode/progetto/pagine%20extra/cv/index.html" class="text-white">CV</a></li>
+          
+          </ul>
+        </div>
+        <!-- Colonna 3 SOCIAL-->
+        <div class="col-md-4">
+          <h3>Follow me</h3>
+          <ul class="list-unstyled">
+        
+            <li class="nav-item me-3 text-white">
+              <a class="nav-link" href="https://www.linkedin.com/in/martina-scattini-897343157/" target="_blank">
+                LinkedIn <i class="fab fa-linkedin"> </i>
+              </a>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="https://www.instagram.com/martina_meetsworld/" target="_blank">
+                  Instagram <i class="fab fa-instagram"></i>
+                </a>
+           
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="https://github.com/meetMartina" target="_blank">
+                    GitHub <i class="fab fa-github"></i>
+                  </a>
+                </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>&copy; Martina_meetsworld</p>
+      </div>
+    </div>
+
+  </footer>
+
+  
+   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>

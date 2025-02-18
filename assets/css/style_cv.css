@@ -1,0 +1,167 @@
+/* Contenitore principale con Flexbox */
+body {
+  background-color: #39a271; /* Verde pastello chiaro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb-top {
+  color: white;
+}
+
+/* Link */
+.link-bianco {
+  color: white;
+}
+
+/* Contenitore che racchiude tutto (compreso l'header e le sezioni) */
+.main-container {
+  display: flex;
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: flex-start; /* Allinea le sezioni sopra */
+  flex-direction: column;  /* Disposizione verticale */
+  padding: 0 15px; /* Padding laterale per non toccare i bordi */
+  width: 100%;  /* Imposta la larghezza al 100% */
+  max-width: 1140px; /* Imposta una larghezza massima per schermi più grandi */
+  margin: 0 auto;  /* Centra il contenitore orizzontalmente */
+  background-color:  #39a271; /* Colore verde di sfondo */
+}
+
+/* Sezione Header */
+.header-section {
+  display: flex; /* Usa Flexbox per la disposizione orizzontale */
+  justify-content: space-between; /* Distribuisce lo spazio tra il testo e l'immagine */
+  align-items: center; /* Centra verticalmente gli elementi */
+  background-color: #ffffff; /* Sfondo bianco per l'header */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Distanza tra l'header e le sezioni sottostanti */
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+}
+
+/* Foto del profilo */
+.profile-pic {
+  width: 200px;
+  height: 210px;
+  border-radius: 50%; /* Forma circolare */
+  object-fit: cover; /* Evita distorsioni nell'immagine */
+  border: 6px solid  #39a271; /* Verde pastello attorno all'immagine */
+}
+
+/* Sezione Data di nascita */
+.dob-container {
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+  color:  #39a271; /* Colore verde scuro */
+}
+
+.dob {
+  font-size: 16px;
+  color: #333; /* Colore grigio scuro */
+}
+
+/* Sezione Sommario */
+.summary-section {
+  color: white;
+  background-color: #39a271 !important; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;  /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+/* Sezione Esperienza */
+.experience-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.card {
+  background-color:  #39a271 !important; 
+  color: white;
+}
+
+
+/* Sezione Formazione */
+.education-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Sezione Competenze */
+.skills-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.custom-badge {
+  background-color: #39a271 !important;
+}
+
+/* Sezione Certificate */
+.certificate-section {
+  background-color: #39a271 !important; /* Colore verde per la sezione certificates */
+  color: white; /* Colore del testo */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Sezione Lingue */
+.languages-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Sezione Contatti */
+.contacts-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Colore dei link personalizzati */
+.custom-link {
+  color: #309867; /* Colore verde scuro */
+  text-decoration: none; /* Rimuovi la sottolineatura */
+}
+
+/* Effetto hover sui link */
+.custom-link:hover {
+  color: #309867; /* Lo stesso verde sul hover */
+  text-decoration: underline; /* Sottolinea al passaggio del mouse */
+}

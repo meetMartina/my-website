@@ -1,0 +1,126 @@
+/* Navbar sticky */
+.navbar-sticky {
+  position: -webkit-sticky; /* Supporto per browser WebKit */
+  position: sticky;
+  top: 0;
+  z-index: 1050; /* Assicura che la navbar rimanga sopra gli altri contenuti */
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+  background-color: #d9f4ab; /* Colore di sfondo */
+}
+
+/* Altezza completa per body e html */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 1500px; /* Altezza per test di scrolling */
+}
+
+/* Nascondere la navbar sticky su dispositivi mobile */
+@media (max-width: 767px) {
+  .navbar-sticky {
+    position: relative; /* Rimuove la sticky position su mobile */
+  }
+}
+
+/* Banner dell'intestazione */
+.head-banner {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+/* Hero section */
+.hero-header {
+  width: 100vw; /* Imposta la larghezza al 100% della viewport */
+  height: 200vh; /* Altezza doppia della finestra */
+  background-size: cover;
+  background-repeat: no-repeat; /* Evita ripetizioni dell'immagine */
+  position: relative;
+}
+
+/* Contenuto del hero */
+.hero-header .container {
+  z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+}
+
+/* Adattabilità mobile per hero section */
+@media (max-width: 768px) {
+  .hero-header {
+    height: 60vh; /* Altezza ridotta su dispositivi mobili */
+  }
+
+  .hero-header h3 {
+    font-size: 2.5rem; /* Riduce la dimensione del titolo */
+  }
+
+  .hero-header h2 {
+    font-size: 1.2rem; /* Riduce la dimensione del sottotitolo */
+  }
+
+  .card-img-top {
+    height: 150px; /* Altezza ridotta per le immagini delle card su mobile */
+  }
+}
+
+/* Immagine profilo */
+.profile-pic {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  object-fit: cover; /* Mantiene le proporzioni senza distorsione */
+}
+
+/* Titoli delle sezioni */
+.section-title h1 {
+  text-align: right;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Immagini delle card */
+.card-img-top {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px; /* Altezza predefinita per le immagini delle card */
+}
+
+/* Corpo delle card */
+.card-body {
+  padding: 1.25rem;
+}
+
+/* Titoli delle card */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Testo delle card */
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Footer styling */
+footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

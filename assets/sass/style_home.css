@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar sticky */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1050; /* Assicura che la navbar rimanga sopra gli altri contenuti */
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Tasto hamburger */
+.navbar-toggler {
+  z-index: 1060; /* Assicura che il tasto hamburger sia sopra al menu */
+}
+
+/* Menu a tendina */
+.collapse.navbar-collapse {
+  z-index: 1040; /* Assicura che il menu sia sotto il tasto hamburger */
+}
+
+/* Nascondere la navbar sticky su mobile */
+@media (max-width: 767px) {
+  .navbar-sticky {
+    position: relative; /* Rimuove la sticky position su mobile */
+  }
+}
+.head-banner {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.hero-header {
+  width: 100vw; /* Imposta la larghezza al 100% della viewport (schermo) */
+  height: 200vh; /* Mantieni l'altezza doppia della finestra */
+  background-size: cover; /* Assicura che l'immagine di sfondo copra l'intero spazio */
+  position: relative;
+  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  /* Imposta il testo bianco e centrato verticalmente */
+}
+.hero-header .container {
+  z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+}
+
+/* Adattabilità mobile */
+@media (max-width: 768px) {
+  .hero-header {
+    height: 60vh; /* Riduce l'altezza su dispositivi mobili */
+  }
+  .hero-header h3 {
+    font-size: 2.5rem; /* Riduce la dimensione del titolo */
+  }
+  .hero-header h2 {
+    font-size: 1.2rem; /* Riduce la dimensione del sottotitolo */
+  }
+  .card-img-top {
+    height: 150px;
+  }
+}
+.profile-pic {
+  width: 15%; /* Diametro dell'immagine */
+  height: 15%; /* Diametro dell'immagine */
+  border-radius: 50%; /* Per rendere l'immagine circolare */
+     object-fit: cover; /* Per mantenere le proporzioni senza distorsione */
+}
+
+.section-title h1 {
+  text-align: right;
+}
+
+/* Card */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  /* Colonne delle card */
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .card-img-top {
+  border-radius: 10px;
+     object-fit: cover;
+  width: 100%;
+  height: 200px; /* Puoi regolare l'altezza come preferisci */
+}
+.card .card-body {
+  padding: 1.25rem;
+}
+.card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.card .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}/*# sourceMappingURL=style_home2.css.map */
