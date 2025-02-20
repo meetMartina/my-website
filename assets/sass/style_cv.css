@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;  /* Previene lo scorrimento orizzontale */
 }
 
 /* Breadcrumb */
@@ -45,7 +46,7 @@ body {
   width: 200px;
   height: 210px;
   border-radius: 50%;
-     object-fit: cover;
+  object-fit: cover;
   border: 6px solid #39a271;
 }
 
@@ -124,4 +125,84 @@ body {
 .custom-link:hover {
   color: #309867;
   text-decoration: underline;
-}/*# sourceMappingURL=style_cv2.css.map */
+}
+
+/* Media Queries per la versione mobile */
+@media (max-width: 768px) {
+  /* Header */
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 150px; /* Riduci la dimensione dell'immagine */
+    height: 150px;
+  }
+
+  /* Sezione Sommario */
+  .summary-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Esperienza e altre sezioni */
+  .experience-section,
+  .education-section,
+  .skills-section,
+  .languages-section,
+  .contacts-section,
+  .certificate-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Card */
+  .card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Ridurre la larghezza di alcune colonne */
+  .col-md-12, .col-md-8, .col-md-4 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Ottimizza i link */
+  .custom-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Modifica delle dimensioni per dispositivi più piccoli */
+  .header-section h1 {
+    font-size: 24px;
+  }
+
+  .profile-pic {
+    position: center;
+    width: 120px; 
+    height: 120px;
+  }
+
+  .summary-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .custom-badge {
+    font-size: 12px;
+  }
+
+  /* Modifica le dimensioni dei testi nelle card */
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
