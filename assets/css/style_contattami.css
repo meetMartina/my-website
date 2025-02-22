@@ -1,0 +1,20 @@
+body {
+  background-color: #baefe1;
+}
+
+.centered-text {
+  text-align: center;
+  margin-top: 1.5cm;
+  margin-bottom: 2cm;
+}
+
+.breadcrumb {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .marg {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=style_contattami.css.map */
