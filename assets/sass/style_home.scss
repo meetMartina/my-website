@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-// Variabili
+// Variabili 
 $primary-color: #555;
 $footer-padding: 1rem;
-$hero-header-height: 200vh;
+$hero-header-height: 100px;
 $hero-header-mobile-height: 60vh;
 $container-z-index: 1;
 
@@ -11,26 +11,67 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar sticky */
-.navbar-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1050;
-  width: 100%;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-/* Tasto hamburger */
+// Tasto hamburger
 .navbar-toggler {
   z-index: 1060;
 }
 
-/* Menu a tendina */
+// Menu a tendina
 .collapse.navbar-collapse {
   z-index: 1040;
 }
 
-/* Nascondere la navbar sticky su mobile */
+// Hero header
+.hero-header {
+  background-image: url("https://www.templates.com/wp-content/uploads/2021/02/543123-800x418.jpeg");
+  opacity: 0.9;
+  min-height: 250px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+  .container {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+    border-radius: 10px;
+    max-width: 650px;
+  }
+}
+
+.custom-container {
+  height: 150px;
+  padding-bottom: 100px; // Padding di base
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 240px; // Padding su schermi più piccoli
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.about-section {
+  min-height: 400px;
+  background-color: #c1e288;
+  padding: 15px 48px 60px 48px;
+}
+
+.profile-pic {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 60px;
+}
+
+// Nascondere la navbar sticky su mobile
 @media (max-width: 767px) {
   .navbar-sticky {
     position: relative;
@@ -38,8 +79,7 @@ html {
 }
 
 .head-banner {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding: 12rem 0;
 }
 
 .hero-header {
@@ -48,43 +88,52 @@ html {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-
+  
   .container {
     z-index: $container-z-index;
   }
+
+  .custom-container {
+    height: 250px;
+    padding-bottom: 100px;
+  }
 }
 
-/* Adattabilità mobile */
-@media (max-width: 768px) {
+.container-fluid {
+  background-color: #d9f4ab;
+}
+
+// Media query per tablet
+@media (max-width: 1024px) {
   .hero-header {
     height: $hero-header-mobile-height;
   }
-
   .hero-header h3 {
     font-size: 2.5rem;
   }
-
   .hero-header h2 {
     font-size: 1.2rem;
   }
-
   .card-img-top {
     height: 150px;
   }
-}
 
-.profile-pic {
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  object-fit: cover;
+  // Centrare la foto del profilo e modificarne la dimensione su mobile
+  .profile-pic {
+    width: 230px;
+    height: 230px; // Deve essere uguale alla larghezza
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
 
 .section-title h1 {
-  text-align: right;
+  text-align: left;
 }
 
-/* Card */
+// Card
 .card {
   border: none;
   border-radius: 10px;
@@ -114,6 +163,45 @@ html {
   .card-text {
     font-size: 1rem;
     color: #555;
+  }
+}
+
+// Layout delle card per dispositivi più piccoli
+#portfolio {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-md-4 {
+    flex: 0 0 30%; 
+    margin-bottom: 2rem;
+
+    .card {
+      width: 100%;
+    }
+  }
+
+  // Regola per schermi più piccoli (tablet)
+  @media (max-width: 992px) {
+    .col-md-4 {
+      flex: 0 0 45%; 
+    }
+  }
+
+  // Regola per schermi molto piccoli (mobile)
+  @media (max-width: 767px) {
+    .col-md-4 {
+      flex: 0 0 100%; 
+    }
   }
 }
 
