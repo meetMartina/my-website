@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* Previene lo scorrimento orizzontale */
+  overflow-x: hidden;  
 }
 
 /* Breadcrumb */
@@ -206,3 +206,4 @@ body {
     font-size: 14px;
   }
 }
+
