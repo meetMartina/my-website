@@ -4,90 +4,134 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar sticky */
-.navbar-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1050; /* Assicura che la navbar rimanga sopra gli altri contenuti */
-  width: 100%;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-/* Tasto hamburger */
 .navbar-toggler {
-  z-index: 1060; /* Assicura che il tasto hamburger sia sopra al menu */
+  z-index: 1060;
 }
 
-/* Menu a tendina */
 .collapse.navbar-collapse {
-  z-index: 1040; /* Assicura che il menu sia sotto il tasto hamburger */
-}
-
-/* Nascondere la navbar sticky su mobile */
-@media (max-width: 767px) {
-  .navbar-sticky {
-    position: relative; /* Rimuove la sticky position su mobile */
-  }
-}
-.head-banner {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  z-index: 1040;
 }
 
 .hero-header {
-  width: 100vw; /* Imposta la larghezza al 100% della viewport (schermo) */
-  height: 200vh; /* Mantieni l'altezza doppia della finestra */
-  background-size: cover; /* Assicura che l'immagine di sfondo copra l'intero spazio */
-  position: relative;
-  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
-  /* Imposta il testo bianco e centrato verticalmente */
+  background-image: url("https://www.templates.com/wp-content/uploads/2021/02/543123-800x418.jpeg");
+  opacity: 0.9;
+  min-height: 250px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .hero-header .container {
-  z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px;
+  opacity: 0.8;
+  border-radius: 10px;
+  max-width: 650px;
 }
 
-/* Adattabilità mobile */
-@media (max-width: 768px) {
+.custom-container {
+  height: 150px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 1024px) {
+  .custom-container {
+    padding-bottom: 240px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.about-section {
+  min-height: 400px;
+  background-color: #c1e288;
+  padding: 15px 48px 60px 48px;
+}
+
+.profile-pic {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 60px;
+}
+
+@media (max-width: 767px) {
+  .navbar-sticky {
+    position: relative;
+  }
+}
+.head-banner {
+  padding: 12rem 0;
+}
+
+.hero-header {
+  width: 100vw;
+  height: 100px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.hero-header .container {
+  z-index: 1;
+}
+.hero-header .custom-container {
+  height: 250px;
+  padding-bottom: 100px;
+}
+
+.container-fluid {
+  background-color: #d9f4ab;
+}
+
+@media (max-width: 1024px) {
   .hero-header {
-    height: 60vh; /* Riduce l'altezza su dispositivi mobili */
+    height: 60vh;
   }
   .hero-header h3 {
-    font-size: 2.5rem; /* Riduce la dimensione del titolo */
+    font-size: 2.5rem;
   }
   .hero-header h2 {
-    font-size: 1.2rem; /* Riduce la dimensione del sottotitolo */
+    font-size: 1.2rem;
   }
   .card-img-top {
     height: 150px;
   }
+  .profile-pic {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
-.profile-pic {
-  width: 15%; /* Diametro dell'immagine */
-  height: 15%; /* Diametro dell'immagine */
-  border-radius: 50%; /* Per rendere l'immagine circolare */
-     object-fit: cover; /* Per mantenere le proporzioni senza distorsione */
-}
-
 .section-title h1 {
-  text-align: right;
+  text-align: left;
 }
 
-/* Card */
 .card {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  /* Colonne delle card */
 }
 .card:hover {
   transform: scale(1.05);
 }
 .card .card-img-top {
   border-radius: 10px;
+  -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 200px; /* Puoi regolare l'altezza come preferisci */
+  height: 200px;
 }
 .card .card-body {
   padding: 1.25rem;
@@ -101,9 +145,38 @@ html {
   color: #555;
 }
 
+#portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+#portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#portfolio .col-md-4 {
+  flex: 0 0 30%;
+  margin-bottom: 2rem;
+}
+#portfolio .col-md-4 .card {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  #portfolio .col-md-4 {
+    flex: 0 0 45%;
+  }
+}
+@media (max-width: 767px) {
+  #portfolio .col-md-4 {
+    flex: 0 0 100%;
+  }
+}
+
 footer {
   background-color: #555;
   color: white;
   text-align: center;
   padding: 1rem;
-}/*# sourceMappingURL=style_home2.css.map */
+}/*# sourceMappingURL=style_home.css.map */
