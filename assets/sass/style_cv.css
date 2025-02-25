@@ -3,20 +3,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
-/* Breadcrumb */
 .breadcrumb-top {
   color: #ffffff;
 }
 
-/* Link */
 .link-bianco {
   color: #ffffff;
 }
 
-/* Contenitore principale */
 .main-container {
   display: flex;
   justify-content: center;
@@ -29,7 +26,6 @@ body {
   background-color: #39a271;
 }
 
-/* Sezione Header */
 .header-section {
   display: flex;
   justify-content: space-between;
@@ -41,16 +37,15 @@ body {
   width: 100%;
 }
 
-/* Foto del profilo */
 .profile-pic {
   width: 200px;
   height: 210px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 6px solid #39a271;
 }
 
-/* Sezione Data di nascita */
 .dob-container {
   margin-top: 10px;
 }
@@ -66,7 +61,6 @@ body {
   color: #333;
 }
 
-/* Sezione Sommario */
 .summary-section {
   color: #ffffff;
   background-color: #39a271 !important;
@@ -78,7 +72,6 @@ body {
   padding-right: 100px;
 }
 
-/* Sezione Esperienza */
 .experience-section,
 .education-section,
 .skills-section,
@@ -93,17 +86,15 @@ body {
   padding-right: 100px;
 }
 
-.custom-badge{
+.custom-badge {
   background-color: #39a271;
 }
 
-/* Personalizzare la card */
 .card {
   background-color: #39a271 !important;
   color: #ffffff;
 }
 
-/* Sezione Certificati */
 .certificate-section {
   background-color: #39a271 !important;
   color: #ffffff;
@@ -115,38 +106,29 @@ body {
   padding-right: 100px;
 }
 
-/* Colore dei link personalizzati */
 .custom-link {
   color: #309867;
   text-decoration: none;
 }
 
-/* Effetto hover sui link */
 .custom-link:hover {
   color: #309867;
   text-decoration: underline;
 }
 
-/* Media Queries per la versione mobile */
 @media (max-width: 768px) {
-  /* Header */
   .header-section {
     flex-direction: column;
     align-items: center;
   }
-
   .profile-pic {
-    width: 150px; /* Riduci la dimensione dell'immagine */
+    width: 150px;
     height: 150px;
   }
-
-  /* Sezione Sommario */
   .summary-section {
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  /* Esperienza e altre sezioni */
   .experience-section,
   .education-section,
   .skills-section,
@@ -156,54 +138,41 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  /* Card */
   .card {
     padding: 15px;
     margin-bottom: 15px;
   }
-
-  /* Ridurre la larghezza di alcune colonne */
-  .col-md-12, .col-md-8, .col-md-4 {
+  .col-md-12,
+  .col-md-8,
+  .col-md-4 {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  /* Ottimizza i link */
   .custom-link {
     font-size: 14px;
   }
 }
-
 @media (max-width: 480px) {
-  /* Modifica delle dimensioni per dispositivi più piccoli */
   .header-section h1 {
     font-size: 24px;
   }
-
   .profile-pic {
     position: center;
-    width: 120px; 
+    width: 120px;
     height: 120px;
   }
-
   .summary-section {
     padding-left: 15px;
     padding-right: 15px;
   }
-
   .custom-badge {
     font-size: 12px;
   }
-
-  /* Modifica le dimensioni dei testi nelle card */
   .card-title {
     font-size: 16px;
   }
-
   .card-text {
     font-size: 14px;
   }
-}
-
+}/*# sourceMappingURL=style_cv.css.map */
