@@ -62,11 +62,6 @@ html {
   margin-left: 60px;
 }
 
-@media (max-width: 767px) {
-  .navbar-sticky {
-    position: relative;
-  }
-}
 .head-banner {
   padding: 12rem 0;
 }
