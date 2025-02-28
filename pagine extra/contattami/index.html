@@ -58,7 +58,7 @@
 
   <div class="container mt-5">
     <h2>Contact Me</h2>
-    <form action="submit_form.php" method="POST">
+    <form id="contact-form" onsubmit="event.preventDefault(); sendMail();">
       <div class="form-group">
         <label for="name">Name (required)</label>
         <input type="text" class="form-control" id="name" name="name" required title="Please enter your name.">
